@@ -25,6 +25,31 @@ jQuery(document).ready(function ($) {
     },
   });
 
+  //slider
+  var swiperTestimonials = new Swiper(".testimonials-slider", {
+    slidesPerView: 1,
+    spaceBetween: 25,
+    breakpoints: {
+      500: {
+        slidesPerView: 2,
+        spaceBetween: 25,
+      },
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 32,
+      },
+
+    },
+    navigation: {
+      nextEl: ".testimonials-next",
+      prevEl: ".testimonials-prev",
+    },
+    pagination: {
+      el: ".testimonials-pagination",
+      clickable: true,
+    },
+  });
+
 
   //open mob menu
   $(document).on('click', '.open-menu a', function (e){
