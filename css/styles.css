@@ -959,5 +959,35 @@ header.is-active {
       letter-spacing: -1.04px; }
 
 /*-------------------------------END-FAQ-PAGE-------------------------------*/
+/*-------------------------------LADING-PAGE-------------------------------*/
+.form-wrap-android {
+  padding: 98px 0 100px; }
+  .form-wrap-android .content .top {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0;
+    margin-bottom: 21px; }
+  .form-wrap-android h1 {
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: -2.8px;
+    margin-bottom: 55px; }
+  .form-wrap-android ul li {
+    font-size: 18px;
+    line-height: 150%; }
+  .form-wrap-android ul li:before {
+    top: 12px;
+    width: 6px;
+    height: 6px; }
+  .form-wrap-android .content p {
+    letter-spacing: 0; }
+  .form-wrap-android .bottom-link a {
+    font-size: 12px; }
+  .form-wrap-android .bottom-link {
+    margin-top: 21px; }
+
+/*-------------------------------END-LADING-PAGE-------------------------------*/
 
 /*# sourceMappingURL=styles.css.map */

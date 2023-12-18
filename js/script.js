@@ -16,11 +16,11 @@ jQuery(document).ready(function ($) {
 
     },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".read-next",
+      prevEl: ".read-prev",
     },
     pagination: {
-      el: ".swiper-pagination",
+      el: ".read-pagination",
       clickable: true,
     },
   });
