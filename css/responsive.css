@@ -316,7 +316,7 @@
       .nav-wrap .swiper-pagination .swiper-pagination-bullet-active {
         background: #000; }
 
-  .accordion-thumb p {
+  .accordion-thumb p, .accordion-thumb h2 {
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -835,9 +835,11 @@
     margin-bottom: 18px; }
 
   .post-block .share p.name {
-    text-align: center; } }
+    text-align: center; }
+
+  .post-block .top .soc-post {
+    display: none; } }
 @media (max-width: 370px) {
   .home-banner .btn-wrap a {
     height: 40px; } }
-
 /*# sourceMappingURL=responsive.css.map */

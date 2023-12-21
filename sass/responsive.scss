@@ -335,7 +335,7 @@
       }
     }
   }
-  .accordion-thumb p{
+  .accordion-thumb p, .accordion-thumb h2{
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -846,6 +846,11 @@
   }
   .post-block .share p.name{
     text-align: center;
+  }
+  .post-block .top{
+    .soc-post{
+      display: none;
+    }
   }
 }
 

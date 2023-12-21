@@ -222,7 +222,7 @@ header{
 .home-banner{
   position: relative;
   z-index: 10;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   .left{
     width: 45%;
     padding: 268px 0 260px;
@@ -267,7 +267,7 @@ h1{
 }
 .form-wrap{
   position: relative;
-  padding: 73px 0 150px;
+  padding: 40px 0 60px;
   .bg{
     overflow: visible;
     img{
@@ -419,7 +419,7 @@ h1{
 .testimonials{
   position: relative;
   z-index: 5;
-  padding: 122px 0 150px;
+  padding: 60px 0 75px;
   .content{
     display: grid;grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px 30px;
@@ -457,7 +457,7 @@ h1{
 }
 
 .support-system{
-  padding: 91px 0 100px;
+  padding: 75px 0 60px;
   .title-h1{
     margin: 0 auto 98px;
     width: 620px;
@@ -563,7 +563,7 @@ h1{
 }
 
 .read-block{
-  padding: 100px 0 50px;
+  padding: 60px 0 50px;
   .title-h2{
     margin-bottom: 57px;
   }
@@ -668,7 +668,6 @@ h1{
   .title-wrap{
     width: 44%;
     margin-bottom: 30px;
-    padding-left: 25px;
   }
   .title-h2{
     font-size: 56px;
@@ -991,12 +990,13 @@ header.is-active{
   display: flex;
   align-items: center;
   padding: 0 100px 1px 48px;
-  p{
+  p, h2{
     font-size: 26px;
     font-style: normal;
     font-weight: 500;
     line-height: 120%; /* 31.2px */
     letter-spacing: -1.04px;
+    margin: 0;
   }
   &:after{
     position: absolute;
@@ -1514,5 +1514,49 @@ header.is-active{
     text-align: center;
     margin-bottom: 100px;
   }
+}
+
+footer .footer-menu .item:last-child{
+  h6{
+    text-align: right;
+  }
+  .soc{
+    justify-content: flex-end;
+  }
+}
+
+.terms .content{
+  padding: 0!important;
+}
+
+.terms h1{
+  font-size: 54px;
+}
+
+.breadcrumb{
+  li{
+    padding: 0!important;
+    &:before{
+      display: none!important;
+    }
+  }
+}
+
+.breadcrumb li span{
+  position: relative;
+  top: 2px;
+}
+.faq .top{
+  margin-top: 30px;
+}
+.faq .content-width{
+  padding: 0 45px;
+}
+
+.post-block .share{
+  margin-top: 30px;
+}
+.author-wrap{
+  margin-bottom: 40px;
 }
 /*------------------------------END-POST-PAGE-------------------------------*/

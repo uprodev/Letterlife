@@ -193,7 +193,7 @@ header {
 .home-banner {
   position: relative;
   z-index: 10;
-  padding-bottom: 100px; }
+  padding-bottom: 50px; }
   .home-banner .left {
     width: 45%;
     padding: 268px 0 260px; }
@@ -234,7 +234,7 @@ h1 {
 
 .form-wrap {
   position: relative;
-  padding: 73px 0 150px; }
+  padding: 40px 0 60px; }
   .form-wrap .bg {
     overflow: visible; }
     .form-wrap .bg img {
@@ -378,7 +378,7 @@ h1 {
 .testimonials {
   position: relative;
   z-index: 5;
-  padding: 122px 0 150px; }
+  padding: 60px 0 75px; }
   .testimonials .content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -410,7 +410,7 @@ h1 {
           font-weight: 600; }
 
 .support-system {
-  padding: 91px 0 100px; }
+  padding: 75px 0 60px; }
   .support-system .title-h1 {
     margin: 0 auto 98px;
     width: 620px;
@@ -528,7 +528,7 @@ h1 {
   margin-bottom: 30px; }
 
 .read-block {
-  padding: 100px 0 50px; }
+  padding: 60px 0 50px; }
   .read-block .title-h2 {
     margin-bottom: 57px; }
   .read-block .swiper-slide figure {
@@ -628,8 +628,7 @@ h1 {
         flex-wrap: wrap; }
   .title-img-text .title-wrap {
     width: 44%;
-    margin-bottom: 30px;
-    padding-left: 25px; }
+    margin-bottom: 30px; }
   .title-img-text .title-h2 {
     font-size: 56px;
     font-style: normal;
@@ -927,13 +926,14 @@ header.is-active {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 100px 1px 48px; }
-  .accordion-thumb p {
+  .accordion-thumb p, .accordion-thumb h2 {
     font-size: 26px;
     font-style: normal;
     font-weight: 500;
     line-height: 120%;
     /* 31.2px */
-    letter-spacing: -1.04px; }
+    letter-spacing: -1.04px;
+    margin: 0; }
   .accordion-thumb:after {
     position: absolute;
     top: 34px;
@@ -1406,6 +1406,40 @@ header.is-active {
 .latest-blog .title-h2 {
   text-align: center;
   margin-bottom: 100px; }
+
+footer .footer-menu .item:last-child h6 {
+  text-align: right; }
+footer .footer-menu .item:last-child .soc {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+
+.terms .content {
+  padding: 0 !important; }
+
+.terms h1 {
+  font-size: 54px; }
+
+.breadcrumb li {
+  padding: 0 !important; }
+  .breadcrumb li:before {
+    display: none !important; }
+
+.breadcrumb li span {
+  position: relative;
+  top: 2px; }
+
+.faq .top {
+  margin-top: 30px; }
+
+.faq .content-width {
+  padding: 0 45px; }
+
+.post-block .share {
+  margin-top: 30px; }
+
+.author-wrap {
+  margin-bottom: 40px; }
 
 /*------------------------------END-POST-PAGE-------------------------------*/
 
