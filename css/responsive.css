@@ -243,6 +243,14 @@
   .content-width {
     width: 540px; }
 
+  footer .footer-menu .item:last-child h6 {
+    text-align: left; }
+
+  footer .footer-menu .item:last-child .soc {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+
   .testimonials .content {
     grid-template-columns: repeat(1, 1fr); }
 
@@ -842,4 +850,5 @@
 @media (max-width: 370px) {
   .home-banner .btn-wrap a {
     height: 40px; } }
+
 /*# sourceMappingURL=responsive.css.map */

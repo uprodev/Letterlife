@@ -266,6 +266,12 @@
   .content-width{
     width: 540px;
   }
+  footer .footer-menu .item:last-child h6{
+    text-align: left;
+  }
+  footer .footer-menu .item:last-child .soc{
+    justify-content: flex-start;
+  }
   .testimonials .content {
     grid-template-columns: repeat(1, 1fr);
   }
