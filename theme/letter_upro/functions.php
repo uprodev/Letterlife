@@ -18,6 +18,13 @@ function load_style_script(){
 	wp_enqueue_script('my-fancybox', get_stylesheet_directory_uri() . '/js/jquery.fancybox.min.js', array(), false, true);
 	wp_enqueue_script('my-nice-select', get_stylesheet_directory_uri() . '/js/jquery.nice-select.min.js', array(), false, true);
 	wp_enqueue_script('my-script', get_stylesheet_directory_uri() . '/js/script.js', array(), false, true);
+	wp_enqueue_script('my-add', get_stylesheet_directory_uri() . '/js/add.js', array(), false, true);
+
+	$my_script = array(
+		'copied_text' => __('Copied', 'Letterlife'),
+	);
+	wp_localize_script('my-script', 'php_vars_script', $my_script);
+
 }
 
 
@@ -95,6 +102,40 @@ function reading_time() {
 
 
 remove_filter('the_excerpt', 'wpautop');
+
+
+add_filter('bcn_breadcrumb_title', 'my_breadcrumb_title_swapper', 3, 10);
+function my_breadcrumb_title_swapper($title, $type, $id)
+{
+	if(in_array('home', $type))
+	{
+		$title = __('Home', 'Letterlife');
+	}
+	return $title;
+}
+
+
+add_action('wp_ajax_loadmore', 'load_posts');
+add_action('wp_ajax_nopriv_loadmore', 'load_posts');
+function load_posts () {
+	$args = unserialize( stripslashes( $_POST['query'] ) );
+	$args['paged'] = $_POST['page'] + 1; 
+
+	$query = new WP_Query( $args );
+	if ( $query->have_posts() ) {
+		while ( $query->have_posts() ) { 
+			$query->the_post(); ?>
+
+			<div class="item">
+
+				<?php get_template_part('parts/content', 'post') ?>
+
+			</div>
+
+		<?php }
+		die();
+	}
+}
 
 
 require 'inc/Customer_IO.php';
