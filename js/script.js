@@ -84,4 +84,16 @@ jQuery(document).ready(function ($) {
     })
   });
 
+
+  //new 16.01.24
+
+
+  if(window.innerWidth > 767){
+    $(".mail-wrap-block").sticky({
+      topSpacing:50
+    });
+  }
+
+
+
 });

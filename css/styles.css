@@ -1583,4 +1583,66 @@ footer .footer-menu .item:last-child .soc {
   -webkit-padding-start: 40px;
      -moz-padding-start: 40px;
           padding-inline-start: 40px; }
+
+/************NEW********/
+.post-block .aside-right ul {
+  margin-bottom: 45px; }
+
+.post-block .aside-right .mail-wrap-block {
+  width: 100%; }
+  .post-block .aside-right .mail-wrap-block .title {
+    margin: 0 0 22px; }
+
+.mail-wrap-block p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; }
+
+.mail-wrap-block .form-wrap {
+  padding: 11px 0 0; }
+  .mail-wrap-block .form-wrap .input-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .mail-wrap-block .form-wrap label {
+    display: none; }
+  .mail-wrap-block .form-wrap input {
+    width: calc(100% - 70px);
+    border-radius: 90px;
+    background: #E8E8E8;
+    height: 54px;
+    line-height: 54px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 0 24px;
+    border: none; }
+  .mail-wrap-block .form-wrap button {
+    border: none !important;
+    outline: none !important;
+    background: transparent !important;
+    cursor: pointer; }
+    .mail-wrap-block .form-wrap button img {
+      vertical-align: top;
+      -webkit-transition: all .4s ease;
+      transition: all .4s ease; }
+    .mail-wrap-block .form-wrap button:hover img {
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg); }
+
+.latest-blog {
+  background: #fff; }
+
+footer {
+  position: relative;
+  z-index: 10; }
+
+.mail-wrap-block-mob {
+  display: none; }
 /*# sourceMappingURL=styles.css.map */

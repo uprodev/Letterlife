@@ -1708,3 +1708,72 @@ footer .footer-menu .item:last-child{
     padding-inline-start: 40px;
   }
 }
+
+
+/************NEW********/
+.post-block .aside-right ul{
+  margin-bottom: 45px;
+}
+.post-block .aside-right .mail-wrap-block{
+  width: 100%;
+  .title{
+    margin: 0 0 22px;
+  }
+}
+.mail-wrap-block p{
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+}
+
+.mail-wrap-block .form-wrap{
+  padding: 11px 0 0;
+  .input-wrap{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  label{
+    display: none;
+  }
+  input{
+    width: calc(100% - 70px);
+    border-radius: 90px;
+    background: #E8E8E8;
+    height: 54px;
+    line-height: 54px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 0 24px;
+    border: none;
+  }
+  button{
+    border: none!important;
+    outline: none!important;
+    background: transparent!important;
+    cursor: pointer;
+    img{
+      vertical-align: top;
+      transition: all .4s ease;
+    }
+    &:hover{
+      img{
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
+
+.latest-blog{
+  background: #fff;
+}
+footer{
+  position: relative;
+  z-index: 10;
+}
+
+.mail-wrap-block-mob{
+  display: none;
+}
