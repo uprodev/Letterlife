@@ -16,7 +16,7 @@ function signup_form_en($args = [])
 			<input id="cio_source_page" name="source_page" type="hidden" value="<?= $current_url ?>" />
 			<div class="mc4wp-form-fields">
 				<label for="email_input"></label>
-				<input type="email" id="email_input" name="email" placeholder="<?php _e('Email', 'Letterlife') ?>">
+				<input type="email" id="email_input" name="email" placeholder="<?php _e('Email', 'Letterlife') ?>" required>
 				<button type="submit" class="btn-default"><?php _e('Sing up', 'Letterlife') ?></button>
 			</div>
 		</form>

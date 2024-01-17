@@ -8,7 +8,13 @@ Theme Name: Letterlife
   justify-content: space-between;
   flex-wrap: wrap;
 }
+.home-banner .btn-wrap a img{
+  width: auto;
+}
 
+.home-banner figure img{
+  height: auto;
+}
 
 .old-site {
   padding: 50px 0 50px; }
@@ -159,6 +165,25 @@ Theme Name: Letterlife
 .container-toggle.is-active + .content-container{
   display: block!important;
 }
+.terms h2 {
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -2.7px;
+  margin-bottom: 20px;
+}
+.old-site .container-toggle:before{
+  background-color: #000;
+  border-radius: 10px;
+  padding: 6px 20px;
+}
+
+@media (max-width: 1199px){
+  .terms h2{
+    font-size: 40px;
+  }
+}
 
 @media (max-width: 767px){
   .old-site li.avatar {
@@ -179,5 +204,13 @@ Theme Name: Letterlife
   .old-site section.panel .panel-content {
     padding: 30px 20px;
   }
-
+  .soc li img{
+    height: 50px;
+  }
+  .terms h2{
+    font-size: 54px;
+  }
+  .terms h1{
+    margin-top: 40px;
+  }
 }

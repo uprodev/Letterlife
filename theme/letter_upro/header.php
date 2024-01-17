@@ -8,10 +8,20 @@
   <?php wp_head(); ?>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <?php if ($field = get_field('code_in_head_h', 'option')): ?>
+    <?= $field ?>
+  <?php endif ?>
+
 </head>
 
 <body <?php body_class(); ?>>
   <?php wp_body_open(); ?>
+  
+  <?php if ($field = get_field('code_in_body_h', 'option')): ?>
+    <?= $field ?>
+  <?php endif ?>
+
   <header>
     <div class="top-line">
       <div class="content-width">
@@ -60,7 +70,7 @@
 <div class="menu-responsive" id="menu-responsive" style="display: none">
   <div class="wrap">
     <nav class="mob-menu">
-      
+
       <?php wp_nav_menu( array(
         'theme_location'  => 'header',
         'container'       => '',
@@ -69,10 +79,18 @@
 
     </nav>
     <div class="lang-wrap">
-      
+
       <?php custom_language_switcher() ?>
 
     </div>
   </div>
 </div>
 <main>
+
+  <?php if (!is_front_page() && !is_single()): ?>
+    <div class="content-width">
+      <ul class="breadcrumb">
+        <?php if(function_exists('bcn_display')) bcn_display() ?>
+      </ul>
+    </div>
+    <?php endif ?>

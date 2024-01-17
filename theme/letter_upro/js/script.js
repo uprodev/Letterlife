@@ -90,4 +90,23 @@ jQuery(document).ready(function ($) {
     e.preventDefault();
     $(this).toggleClass('is-active');
   });
+
+  //copy in buffer
+  $(document).on('click', '.soc-post li:first-child a', function (e){
+    e.preventDefault();
+    let copyText = $(this).attr('href');
+    document.addEventListener('copy', function(e) {
+      e.clipboardData.setData('text/plain', copyText);
+      e.preventDefault();
+    }, true);
+
+    document.execCommand('copy');
+    //console.log('copied text : ', copyText);
+
+    $(this).closest('body').prepend(`<p class='info-show'>${php_vars_script.copied_text}</p>`);
+    setTimeout(function() {
+      $('.info-show').hide()
+    }, 1000);
+
+  });
 });

@@ -14,7 +14,22 @@ body {
   background: #FFF;
   max-width: 3000px;
   margin: auto;
+  padding: 0!important;
   color: #000; }
+
+.info-show{
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  transform: translate(-50%,0);
+  display: inline-block;
+  background: #000;
+  border-radius: 4px;
+  padding: 5px 10px;
+  font-size: 16px;
+  color: #ffff;
+  z-index: 9999;
+}
 
 header, section, footer {
   margin: auto; }
@@ -824,7 +839,7 @@ header.is-active {
     font-size: 56px;
     letter-spacing: -2.8px; }
   .terms .content {
-    padding: 0 67px;
+    padding: 0 45px;
     background: #fff; }
   .terms .content-width {
     padding: 0 52px; }
@@ -1414,8 +1429,9 @@ footer .footer-menu .item:last-child .soc {
       -ms-flex-pack: end;
           justify-content: flex-end; }
 
-.terms .content {
-  padding: 0 !important; }
+.terms h1{
+  padding-left: 45px;
+}
 
 .terms h1 {
   font-size: 54px; }
@@ -1441,6 +1457,19 @@ footer .footer-menu .item:last-child .soc {
 .author-wrap {
   margin-bottom: 40px; }
 
+
+.content-width > .breadcrumb{
+  padding-top: 40px;
+  margin-bottom: -65px;
+}
+
+.post-block .breadcrumb{
+  max-width: calc(100% - 160px);
+}
+
+body.blog{
+  padding: 0!important;
+}
 /*------------------------------END-POST-PAGE-------------------------------*/
 
 /*# sourceMappingURL=styles.css.map */
