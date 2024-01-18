@@ -282,41 +282,6 @@
     font-weight: 600;
     line-height: 120%; }
 
-  .mail-wrap-block-mob {
-    display: block;
-    width: 100%;
-    margin: 0 0 65px;
-    padding-top: 50px;
-    position: relative; }
-  .mail-wrap-block-mob:before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    content: '';
-    height: 1px;
-    background: rgba(0, 0, 0, 0.33); }
-
-  .post-block .share .img-wrap-author {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
-
-  .post-block .share p.name {
-    text-align: center; }
-
-  .post-block .share .img-wrap-author {
-    padding: 0 !important;
-    border-top: none !important; }
-
-  .post-block .main .title {
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 120%; }
-
   footer .footer-menu .item:last-child h6 {
     text-align: left; }
 
@@ -921,32 +886,22 @@
   .post-block .share p.name {
     text-align: center; }
 
+  .mail-wrap-block-mob {
+    display: block;
+    width: 100%;
+    margin: 0 0 65px;
+    padding-top: 50px;
+    position: relative; }
+  .mail-wrap-block-mob:before {
+    left: -15px;
+    width: calc(100% + 30px); }
   .content-width > .breadcrumb {
     padding-top: 20px;
     margin-bottom: -44px;
   }
   .post-block .breadcrumb{
     max-width: 100%;
-
   }
-  .mail-wrap-block-mob {
-    display: block;
-    width: 100%;
-    margin: 0 0 65px;
-    padding-top: 50px;
-    position: relative; }
-  .mail-wrap-block-mob:before {
-    left: -15px;
-    width: calc(100% + 30px); }
-  .mail-wrap-block-mob {
-    display: block;
-    width: 100%;
-    margin: 0 0 65px;
-    padding-top: 50px;
-    position: relative; }
-  .mail-wrap-block-mob:before {
-    left: -15px;
-    width: calc(100% + 30px); }
   .post-block .top .soc-post {
     display: none; } }
 @media (max-width: 370px) {
