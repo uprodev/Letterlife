@@ -85,6 +85,9 @@ jQuery(document).ready(function ($) {
   });
 
 
+
+
+
   //new 16.01.24
 
 
@@ -93,6 +96,38 @@ jQuery(document).ready(function ($) {
       topSpacing:50
     });
   }
+
+
+  //new 22.01.24
+  var swiperCoach = new Swiper(".coach-slider", {
+    spaceBetween: 30,
+    pagination: {
+      el: ".coach-pagination",
+      clickable: true,
+    },
+  });
+
+  var swiperSay = new Swiper(".say-slider", {
+    spaceBetween: 30,
+    pagination: {
+      el: ".say-pagination",
+      clickable: true,
+    },
+    slidesPerView: 1,
+    breakpoints: {
+      500: {
+        slidesPerView: 2,
+        spaceBetween: 25,
+      },
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 32,
+      },
+
+    },
+  });
+
+
 
 
 
