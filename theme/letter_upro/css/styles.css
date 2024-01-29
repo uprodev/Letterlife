@@ -1663,6 +1663,7 @@ body.blog{
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  flex-wrap: nowrap;
  }
 .mail-wrap-block .form-wrap label {
   display: none; }
