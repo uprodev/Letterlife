@@ -1704,4 +1704,12 @@ footer {
 .post-block .share .sticky-wrapper{
   display: none;
 }
+
+.author-wrap {
+  margin-bottom: 60px;
+}
+
+.post-block + .latest-blog{
+  padding-top: 0;
+}
 /*# sourceMappingURL=styles.css.map */
