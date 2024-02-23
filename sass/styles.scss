@@ -2956,4 +2956,36 @@ footer{
   display: none;
 }
 
-
+.recorded-webinars{
+  .content-width{
+    position: relative;
+  }
+  .link-wrap{
+    position: absolute;
+    top: 15px;
+    right: 150px;
+    a{
+      display: inline-block;
+      font-size: 17px;
+      line-height: 120%;
+      font-weight: 600;
+      color: #000;
+      position: relative;
+      &:after{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        content: '';
+        height: 1px;
+        background: #000;
+        transition: all .4s ease;
+        width: 100%;
+      }
+      &:hover{
+        &:after{
+          transform: scaleX(0);
+        }
+      }
+    }
+  }
+}

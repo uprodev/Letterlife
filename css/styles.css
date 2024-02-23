@@ -2706,4 +2706,31 @@ footer {
 .webinar-2x .mob-read {
   display: none; }
 
+.recorded-webinars .content-width {
+  position: relative; }
+.recorded-webinars .link-wrap {
+  position: absolute;
+  top: 15px;
+  right: 150px; }
+  .recorded-webinars .link-wrap a {
+    display: inline-block;
+    font-size: 17px;
+    line-height: 120%;
+    font-weight: 600;
+    color: #000;
+    position: relative; }
+    .recorded-webinars .link-wrap a:after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      content: '';
+      height: 1px;
+      background: #000;
+      -webkit-transition: all .4s ease;
+      transition: all .4s ease;
+      width: 100%; }
+    .recorded-webinars .link-wrap a:hover:after {
+      -webkit-transform: scaleX(0);
+              transform: scaleX(0); }
+
 /*# sourceMappingURL=styles.css.map */

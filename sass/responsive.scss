@@ -15,6 +15,9 @@
   .webinar-big .content{
     padding: 0;
   }
+  .recorded-webinars .link-wrap{
+    right: 0;
+  }
 }
 
 @media (max-width:1199px){
@@ -1200,6 +1203,12 @@
         background: linear-gradient(180deg, rgba(255,255,255,0) 0%,rgba(255,255,255,0.9) 40%,  rgba(255,255,255,1) 100%);
       }
     }
+  }
+  .recorded-webinars .link-wrap{
+    position: relative;
+    margin-bottom: 20px;
+    top: 0;
+    margin-top: -20px;
   }
 }
 
